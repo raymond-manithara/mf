@@ -1,0 +1,169 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container .app_bar{
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+.container .app_bar .menu{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.container .app_bar .menu .menu_item{
+  padding-inline: 1rem;
+  cursor: pointer;
+}
+.container .app_body{
+  background-color: #ABABAB;
+  margin: 0;
+  padding: 0;
+}
+.home_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_container .center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.customer_container table{
+  width: 60%;
+  border: none;
+  border-collapse: collapse;
+}
+.customer_container table th{
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.customer_container table tr{
+  background-color: #FFF;
+  border: none;
+  height: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);  
+}
+.customer_container tr td,.customer_container tr th{
+  background-color: #FFF;
+  border: none;
+  padding: 1rem;
+}
+
+.customer_container tr td button{
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+.customer_container .input_container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-block: 5rem;
+  margin-left: 2rem;
+}
+.customer_container .input_container input{ 
+  padding:0.6rem;
+  border-radius: 6px;
+  border: none;
+  width: 30%;
+  margin-right: 1rem;
+}
+.overlay{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.overlay .overlay_fixed{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay .overlay_fixed .card{
+  width: 60%;
+  height: 65%;
+  background-color: #FFF;
+  border-radius: 6px;
+  position: relative;
+  padding: 2rem;
+}
+.card .close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #ABABAB;
+  width: 2rem;
+  cursor: pointer;
+}
+.card .edit_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card .edit_container .edit_title{
+  font-size: 32px;
+  padding-block: 1rem;
+}
+.card .edit_container .edit_body{
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.card .edit_container .edit_body .edit_input{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+}
+.card .edit_container .edit_body button{
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+width: 40%;
+align-self: flex-end;
+justify-self: flex-end;
+}
+.card .edit_container .edit_body .edit_input input{
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ABABAB;
+  margin-top: 0.4rem;
+}
